@@ -1,6 +1,7 @@
 from turtle import Turtle, Screen
 import random
 
+
 isRaceOn = False
 screen = Screen()
 screen.setup(width=500, height=400)
@@ -18,6 +19,8 @@ for turtles in range(0,6):
 
 if userInput:
     isRaceOn = True
+
+
 
 while isRaceOn:
     for turtle in allTurtles:
