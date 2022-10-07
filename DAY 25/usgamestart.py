@@ -15,10 +15,12 @@ while len(guessedStates) < 50:
     print(answerState)
     #if answer is in 50 states
     if answerState == "Exit":
-        missingStates = []
-        for state in allStates:
-            if state not in guessedStates:
-                missingStates.append(state)
+        #using list comprehension
+        missingStates = [state for state in allStates if state not in guessedStates]
+        # missingStates = []
+        # for state in allStates:
+        #     if state not in guessedStates:
+        #         missingStates.append(state)
         newData = pd.DataFrame(missingStates)
         newData.to_csv("correction for states.csv")
         break
