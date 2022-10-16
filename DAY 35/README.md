@@ -1,0 +1,1 @@
+A weather program that sends a sms alert if it will rain in lagos... You can change the lat and long parameters to any location of your choice
