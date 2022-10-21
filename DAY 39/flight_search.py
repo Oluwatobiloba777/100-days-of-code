@@ -6,9 +6,10 @@ TEQUILA_ENDPOINT = "https://tequila-api.kiwi.com"
 TEQUILA_API_KEY = "YOUR_API_KEY_HERE"
 
 LOCATION_ENDPOINT = f"{TEQUILA_ENDPOINT}/locations/query"
+
+
 class FlightSearch:
     #This class is responsible for talking to the Flight Search API.
-
     def get_destination_code(self, city_name):
         # Return "TESTING" for now to make sure Sheety is working. Get TEQUILA API data later.
         headers = {"apikey": TEQUILA_API_KEY}
@@ -25,8 +26,8 @@ class FlightSearch:
             "fly_to": destinationCityCode,
             "date_from": fromTime.strftime("%d/%m/%Y"),
             "date_to": toTime.strftime("%d/%m/%Y"),
-            "nights_in_dst_from": 7,
-            "nights_in_dst_to": 28,
+            "nights_in_dst_from": 14,
+            "nights_in_dst_to": 30,
             "flight_type": "round",
             "one_for_city": 1,
             "max_stopovers": 0,

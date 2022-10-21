@@ -1,0 +1,3 @@
+A cheap flight finder program
+
+It alerts through sms and email with an additional feature of showing stop overs...
