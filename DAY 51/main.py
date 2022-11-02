@@ -11,7 +11,7 @@ TWITTER_PASSWORD = "TWITTER PASSWORD"
 TWITTER_URL = "https://twitter.com/home"
 lEN_CHAR = 280
 
-chrome_driver_path = "C:\Development\chromedriver.exe"
+chrome_driver_path = "YOUR DRIVER PATH"
 SERVICE = Service(chrome_driver_path)
 DRIVER = webdriver.Chrome(service=SERVICE)
 

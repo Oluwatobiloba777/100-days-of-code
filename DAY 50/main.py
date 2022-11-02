@@ -8,7 +8,7 @@ from time import sleep
 FACEBOOK = "YOUR FACEBOOK EMAIL"
 FACEBOOK_PASSWORD = "FACEBOOK PASSWORD"
 
-chrome_driver_path = "C:\Development\chromedriver.exe"
+chrome_driver_path = "YOUR DRIVER PATH"
 driver = webdriver.Chrome(executable_path=chrome_driver_path)
 
 driver.get("https://www.tinder.com")
