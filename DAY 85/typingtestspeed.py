@@ -44,7 +44,7 @@ if __name__ == '__main__':
     prompt = "Not everybody can type fast and that's okay"
     print("Type this:- '", prompt, "'")
 
-    
+
     input("press ENTER when you are ready!")
 
 
