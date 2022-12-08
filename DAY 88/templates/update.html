@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/style.css' )}}">
+    <title>Update-Todo List</title>
+</head>
+<body>
+    <div>
+        <form action="" method="POST">
+                <label>Title:</label>
+                <input type="text" name="title" value="{{new_list.title}}">
+                <br>
+                <textarea placeholder="You can write here.... press enter when you are done" name="content" value="{{new_list.content}}">
+                </textarea>
+                <button type="submit" value="Submit"></button>
+            </form>
+    </div>
+
+</body>
+</html>

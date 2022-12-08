@@ -1,0 +1,21 @@
+body {
+    background-color: azure;
+}
+
+nav {
+    background-color: black;
+    overflow: hidden;
+}
+
+nav a{
+    float: right;
+    color: beige;
+    text-align: center;
+    padding: 12px 14px;
+    font-size: 16px;
+}
+textarea {
+    margin: 20px;
+    padding: 60px;
+    resize: none;
+}
