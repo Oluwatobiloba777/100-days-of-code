@@ -1,0 +1,22 @@
+.image {
+    max-width:100%;
+    width: auto;
+    height: auto;
+}
+
+.table {
+    width: 100%;
+    text-align: center;
+}
+
+.some-margin {
+    margin-bottom: 20px;
+}
+
+.element-margin {
+    margin: 20px;
+}
+
+hr {
+    width: 100%;
+}

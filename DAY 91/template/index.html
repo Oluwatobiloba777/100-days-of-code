@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+
+<!--            <div class="">-->
+
+<!--                <h1 class="element-margin">Image Color Palette Generator</h1>-->
+<!--                <hr class="element-margin">-->
+
+<!--                {% if filename %}-->
+<!--                    <img src="{{ url_for('display_image', filename=filename) }}" class="image element-margin">-->
+<!--                {% else %}-->
+<!--                    <img src="{{ url_for('display_image', filename=filename) }}" class="image element-margin">-->
+<!--                {% endif %}-->
+<!--                <table class="table element-margin">-->
+<!--                    <thead>-->
+<!--                        <tr>-->
+<!--                            <th>Color</th>-->
+<!--                            <th>Color Hex Code</th>-->
+<!--                            <th>Percentage</th>-->
+<!--                        </tr>-->
+<!--                    </thead>-->
+<!--                    <tbody>-->
+<!--                        {% for code in hex_codes %}-->
+<!--                            <tr>-->
+<!--                                <td style="background-color:{{code}}"></td>-->
+<!--                                <td>{{code}}</td>-->
+<!--                                <td>{{percent[hex_codes.index(code)]}}%</td>-->
+<!--                            </tr>-->
+<!--                        {% endfor %}-->
+<!--                    </tbody>-->
+
+
+<!--                </table>-->
+
+                <h2 class="element-margin">Select a file to upload</h2>
+                <p class="element-margin">
+                    {% with messages = get_flashed_messages() %}
+                      {% if messages %}
+                        <ul>
+                        {% for message in messages %}
+                          <li>{{ message }}</li>
+                        {% endfor %}
+                        </ul>
+                      {% endif %}
+                    {% endwith %}
+                </p>
+
+                <form method="post" action="/{{filename}}" enctype="multipart/form-data" class="element-margin">
+                    <dl>
+                        <p>
+                            <input type="file" name="file" class="form-control" autocomplete="off" required>
+                        </p>
+                    </dl>
+                    <p>
+                        <input type="submit" value="Submit" class="btn btn-info">
+                    </p>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
