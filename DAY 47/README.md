@@ -1,1 +1,1 @@
-A program that sends an email alert about a drop in price of a particular product on Amazon
+### A program that sends an email alert about a drop in price of a particular product on Amazon
